@@ -1,0 +1,41 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;   
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: black;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.menu-item p {
+    color: red;
+}
