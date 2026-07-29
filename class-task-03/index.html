@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Course Landing Page</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav fw-semibold">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="bg-light-blue py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold mb-3">Become a <br> Full Stack Developer</h1>
+                    <p class="lead text-muted mb-4">Learn HTML, CSS, Bootstrap, JavaScript, React & Node.js and build real world projects.</p>
+                    <a href="#courses" class="btn btn-primary btn-lg px-4 shadow-sm">Explore Courses</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://placehold.co/600x400/e2e8f0/64748b?text=Hero+Image" alt="Hero Illustration" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section id="courses" class="py-5 bg-white">
+        <div class="container py-4 text-center">
+            <h2 class="fw-bold mb-5">Our Courses</h2>
+            
+            <div class="row g-4">
+                <!-- HTML Card -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm bg-light-blue">
+                        <i class="fa-brands fa-html5 fa-3x color-html mb-3 mt-2"></i>
+                        <h4 class="card-title fw-bold">HTML</h4>
+                        <p class="card-text text-muted">Learn the structure of web pages using HTML.</p>
+                        <button class="btn btn-primary mt-auto mx-auto w-75" data-bs-toggle="modal" data-bs-target="#courseModal">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- CSS Card -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm bg-light-blue">
+                        <i class="fa-brands fa-css3-alt fa-3x color-css mb-3 mt-2"></i>
+                        <h4 class="card-title fw-bold">CSS</h4>
+                        <p class="card-text text-muted">Style your web pages with modern CSS.</p>
+                        <button class="btn btn-primary mt-auto mx-auto w-75" data-bs-toggle="modal" data-bs-target="#courseModal">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Bootstrap Card -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm bg-light-blue">
+                        <i class="fa-brands fa-bootstrap fa-3x color-bs mb-3 mt-2"></i>
+                        <h4 class="card-title fw-bold">Bootstrap</h4>
+                        <p class="card-text text-muted">Build responsive websites faster with Bootstrap.</p>
+                        <button class="btn btn-primary mt-auto mx-auto w-75" data-bs-toggle="modal" data-bs-target="#courseModal">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- JavaScript Card -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm bg-light-blue">
+                        <i class="fa-brands fa-js fa-3x color-js mb-3 mt-2"></i>
+                        <h4 class="card-title fw-bold">JavaScript</h4>
+                        <p class="card-text text-muted">Add interactivity and functionality to websites.</p>
+                        <button class="btn btn-primary mt-auto mx-auto w-75" data-bs-toggle="modal" data-bs-target="#courseModal">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- React Card -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm bg-light-blue">
+                        <i class="fa-brands fa-react fa-3x color-react mb-3 mt-2"></i>
+                        <h4 class="card-title fw-bold">React</h4>
+                        <p class="card-text text-muted">Build modern UI using the React library.</p>
+                        <button class="btn btn-primary mt-auto mx-auto w-75" data-bs-toggle="modal" data-bs-target="#courseModal">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Node.js Card -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm bg-light-blue">
+                        <i class="fa-brands fa-node-js fa-3x color-node mb-3 mt-2"></i>
+                        <h4 class="card-title fw-bold">Node.js</h4>
+                        <p class="card-text text-muted">Build scalable server-side applications.</p>
+                        <button class="btn btn-primary mt-auto mx-auto w-75" data-bs-toggle="modal" data-bs-target="#courseModal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES / WHY CHOOSE US -->
+    <section id="about" class="bg-light-blue py-5">
+        <div class="container py-4 text-center">
+            <h2 class="fw-bold mb-5">Why Choose Us</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <i class="fa-solid fa-rocket fa-3x text-primary mb-3"></i>
+                    <h5 class="fw-bold">Fast Learning</h5>
+                    <p class="text-muted px-3">Learn faster with hands-on projects and real-world examples.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa-solid fa-book-open fa-3x text-primary mb-3"></i>
+                    <h5 class="fw-bold">Industry Ready</h5>
+                    <p class="text-muted px-3">Our courses are designed and taught by industry experts.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa-solid fa-users fa-3x text-primary mb-3"></i>
+                    <h5 class="fw-bold">Placement Support</h5>
+                    <p class="text-muted px-3">Get dedicated placement assistance and career guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-5 bg-white">
+        <div class="container py-4 text-center">
+            <h2 class="fw-bold mb-5">What Students Say</h2>
+            <div id="testimonialCarousel" class="carousel slide col-md-8 mx-auto" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <i class="fa-solid fa-quote-left fa-2x text-primary mb-3"></i>
+                        <h4 class="fst-italic text-muted">"Excellent course! The explanations are simple and easy to understand."</h4>
+                        <p class="mt-4 fw-bold">- Student Name</p>
+                    </div>
+                    <div class="carousel-item">
+                        <i class="fa-solid fa-quote-left fa-2x text-primary mb-3"></i>
+                        <h4 class="fst-italic text-muted">"I built my first full-stack app in just a few weeks. Highly recommended!"</h4>
+                        <p class="mt-4 fw-bold">- Another Student</p>
+                    </div>
+                </div>
+                <div class="carousel-indicators position-relative mt-4">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active bg-primary"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="bg-primary"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="bg-light-blue py-5">
+        <div class="container py-4">
+            <h2 class="text-center fw-bold mb-5">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="bg-white p-4 p-md-5 rounded shadow-sm border">
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary px-5 btn-lg shadow-sm">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="mb-3 mb-md-0">
+                &copy; 2026 Your Name | All Rights Reserved
+            </div>
+            <div>
+                <a href="#" class="text-white me-3 fs-5"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-white me-3 fs-5"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-white me-3 fs-5"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-white fs-5"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL (Triggers when 'Learn More' is clicked) -->
+    <div class="modal fade" id="courseModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0 px-4">
+                    <img src="https://placehold.co/500x300/e2e8f0/64748b?text=Course+Preview" alt="Course Image" class="img-fluid rounded mb-3">
+                    <h4 class="modal-title fw-bold mb-2">Course Title</h4>
+                    <p class="text-muted">Short description about the course. You will learn the core fundamentals and build interactive applications.</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center pb-4">
+                    <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary px-4">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle (Requires Popper.js, included in bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
